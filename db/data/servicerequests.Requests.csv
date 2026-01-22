@@ -1,0 +1,4 @@
+ID,title,description,priority,status,assignee
+11111111-1111-1111-1111-111111111111,Printer not working,"Office printer shows paper jam error but no jam.",High,New,
+22222222-2222-2222-2222-222222222222,WiFi unstable,"WiFi drops every 10 minutes in the lobby area.",Medium,InProgress,admin@example.com
+33333333-3333-3333-3333-333333333333,Software install request,"Install Adobe Photoshop on workstation.",Low,Resolved,admin@example.com
