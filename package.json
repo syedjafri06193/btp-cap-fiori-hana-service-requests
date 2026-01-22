@@ -1,0 +1,19 @@
+{
+  "name": "service-requests-btp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Service Requests application on SAP BTP (CAP + OData V4 + Fiori Elements).",
+  "scripts": {
+    "start": "cds-serve",
+    "watch": "cds watch",
+    "build": "cds build --production",
+    "test": "node -c srv/service.js"
+  },
+  "dependencies": {
+    "@sap/cds": "^8.0.0",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@sap/cds-dk": "^8.0.0"
+  }
+}
