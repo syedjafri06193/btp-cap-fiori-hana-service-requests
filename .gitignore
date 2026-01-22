@@ -1,0 +1,12 @@
+node_modules/
+gen/
+dist/
+.DS_Store
+.vscode/
+.env
+*.log
+
+# CAP build artifacts
+.mta_build_tmp/
+mta_archives/
+resources/
