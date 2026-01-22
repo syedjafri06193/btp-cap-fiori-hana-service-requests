@@ -1,0 +1,20 @@
+{
+  "xsappname": "service-requests",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    { "name": "$XSAPPNAME.Admin", "description": "Administrative access" },
+    { "name": "$XSAPPNAME.Requester", "description": "Standard requester access" }
+  ],
+  "role-templates": [
+    {
+      "name": "Admin",
+      "description": "Manage all requests (assignment and status updates).",
+      "scope-references": ["$XSAPPNAME.Admin"]
+    },
+    {
+      "name": "Requester",
+      "description": "Create requests and view own requests.",
+      "scope-references": ["$XSAPPNAME.Requester"]
+    }
+  ]
+}
