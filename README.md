@@ -1,18 +1,22 @@
-# SAP BTP CAP + Fiori + HANA Service Requests
+# Service Requests (SAP BTP)
 
-A portfolio-ready SAP BTP project demonstrating:
-- CAP (Node.js) OData service
-- Fiori Elements UI (List Report + Object Page)
-- Local dev with SQLite
-- HANA-ready deployment via MTA (Cloud Foundry)
-- Role-based access patterns (XSUAA-ready)
+Service Requests is a small SAP BTP application built with:
+- SAP Cloud Application Programming Model (CAP) - Node.js
+- OData V4 service
+- SAPUI5 Fiori Elements (List Report + Object Page)
+- Local persistence via SQLite for development
+- HANA-ready deployment via Cloud Foundry (MTA)
 
-## Architecture
-- CAP Service (OData V4) -> DB (SQLite local / HANA in cloud)
-- Fiori Elements UI -> consumes OData service
+## Components
 
-## Prerequisites (Local)
-- Node.js (LTS)
-- SAP CDS Development Kit:
+- `srv/` CAP service layer (OData V4)
+- `db/` data model and initial seed data
+- `app/service-requests/` SAPUI5 Fiori Elements UI
+
+## Local development
+
+### Prerequisites
+- Node.js LTS
+- `@sap/cds-dk` installed globally:
   ```bash
   npm i -g @sap/cds-dk
