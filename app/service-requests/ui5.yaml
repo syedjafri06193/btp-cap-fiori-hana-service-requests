@@ -1,0 +1,15 @@
+specVersion: "3.0"
+metadata:
+  name: service-requests
+type: application
+server:
+  customMiddleware:
+    - name: ui5-middleware-simpleproxy
+      afterMiddleware: compression
+      configuration:
+        baseUri: "http://localhost:4004"
+        mountPath: "/"
+builder:
+  resources:
+    excludes:
+      - "/test/**"
